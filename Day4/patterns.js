@@ -96,5 +96,21 @@ for (let row = 1; row <= 5; row++) {
 // *********
 
 function pyramid(){
-    rows = 5
+  let rows = 5;
+
+for (let i = 1; i <= rows; i++) {
+    let line = "";
+
+    // Spaces
+    for (let j = 1; j <= rows - i; j++) {
+        line += " ";
+    }
+
+    // Stars
+    for (let j = 1; j <= (2 * i - 1); j++) {
+        line += "*";
+    }
+
+    console.log(line);
+}
 }
