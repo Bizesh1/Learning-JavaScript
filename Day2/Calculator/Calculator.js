@@ -29,22 +29,20 @@ function calculator(x, y, operation)
 
 function map(operation)
 {
-    op_sign = ""
-    switch (operation)
-    {
-        case "add":
-            op_sign = "+"
-        case "subtract":
-            op_sign = "-"
-        case "multiply":
-            op_sign = "*"
-        case "divide":
-            op_sign = "/"
-        default:
+    let op_sign = ""
+    
+    if (operation == "add")
+        op_sign = "+";
+    else if (operation == "subtract")
+        op_sign = "-";
+    else if (operation == "multiply")
+        op_sign = "*";
+    else if (operation == "divide")
+        op_sign = "/";
             
 
-        return op_sign;
-    }
+    return op_sign;
+    
 }
 
 function main()
